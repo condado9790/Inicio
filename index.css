@@ -1,0 +1,142 @@
+/* Estilo global para resetear márgenes, rellenos y la fuente de toda la página */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+/* Estilo para la sección principal */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Altura mínima del 100% del alto del viewport */
+    width: 100%;
+    background: url('foto.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/* Estilo para el contenedor del formulario */
+.form-box {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Estilo para el olvido de contraseña */
+.forget label input {
+    margin-right: 3px;
+}
+
+.forget label a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 60px;
+}
+
+.forget label a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el botón */
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+/* Estilo para el registro */
+.register {
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el encabezado */
+h2 {
+    font-size: 5em;
+    color: #fff;
+    text-align: center;
+}
+
+/* Estilo para el cuadro de entrada de texto */
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 350px;
+    border-bottom: 2px solid #fff;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    top: -5px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+/* Estilo para el mensaje de olvido de contraseña */
+.forget {
+    margin: -15px 0 15px;
+    font-size: 0.9em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.forget a {
+    color: white;
+    text-decoration: none; /* Para quitar cualquier subrayado si es necesario */
+}
